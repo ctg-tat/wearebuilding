@@ -1,7 +1,7 @@
 import { createContext, useState } from "react"
 import OrderModal from "../components/OrderModal/OrderModal";
 import { Outlet } from "react-router-dom";
-import { Modal } from "react-bootstrap";
+import BasketModal from "../components/BasketModal/BasketModal";
 
 export const ModalContext = createContext(null);
 export const CardModalContext = createContext(null);
@@ -21,7 +21,7 @@ const Root = () => {
             <ModalContext.Provider value={{ modal, toggleModal }}>
                 <Outlet/>
                 <OrderModal />
-                <Modal/>
+                {/* <BasketModal /> */}
             </ModalContext.Provider>
         </CardModalContext.Provider>
     )

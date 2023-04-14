@@ -1,7 +1,9 @@
 import { useContext, useRef } from "react";
 import { CardModalContext } from "../../pages/Root";
+import { Modal } from "bootstrap";
+import { Button } from "react-bootstrap";
 
-const Modal = () => {
+const BasketModal = () => {
 
     const { modalcard, toggleModalcard } = useContext(CardModalContext);
 
@@ -32,4 +34,4 @@ const Modal = () => {
     )
 }
 
-export default Modal;
+export default BasketModal;
